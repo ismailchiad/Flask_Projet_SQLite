@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentification Utilisateur</title>
+</head>
+<body>
+    <h1>Connexion Utilisateur</h1>
+    <form method="post">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Connexion</button>
+        {% if error %}
+        <p style="color: red;">Identifiants incorrects</p>
+        {% endif %}
+    </form>
+</body>
+</html>
